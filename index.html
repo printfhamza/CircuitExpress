@@ -2,104 +2,35 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Circuit Express — Jeu pédagogique</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circuit Express</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="hero reveal">
-  <h1>CIRCUIT EXPRESS</h1>
-  <p>Jeu de cartes pédagogique sur l’électricité et l’automatisation</p>
-  <div class="hero-buttons">
-    <button onclick="scrollToSection('projet')">Découvrir le projet</button>
-    <button onclick="scrollToSection('familles')">Voir les cartes</button>
+<nav>
+  <h1>Circuit Express</h1>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="projet.html">À propos</a></li>
+    <li><a href="cartes.html">Les cartes</a></li>
+    <li><a href="equipe.html">Équipe</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <h2>Jeu de cartes pédagogique</h2>
+  <p>Comprendre la logique d’un circuit électrique automatisé</p>
+
+  <div class="buttons">
+    <a href="projet.html" class="btn">Découvrir le projet</a>
+    <a href="cartes.html" class="btn secondary">Voir les cartes</a>
   </div>
 </header>
 
-<section id="projet" class="section light reveal">
-  <h2>Le projet</h2>
-  <p>
-    Circuit Express est un jeu de cartes éducatif permettant de comprendre
-    la logique d’un circuit électrique automatisé sans calculs,
-    uniquement par la réflexion logique.
-  </p>
-</section>
-
-<section class="section white reveal">
-  <h2>Logique du circuit</h2>
-  <div class="logic">
-    🔋 Source → 🔌 Fil → 🔘 Interrupteur / Capteur → ⚙️ Préactionneur →
-    💡 Récepteur → 🔌 Fil → 🔁 Retour à la source
-  </div>
-</section>
-
-<section id="familles" class="section light reveal">
-  <h2>Familles de cartes</h2>
-
-  <div class="grid">
-
-    <div class="card blue" onclick="openModal('Sources d’alimentation','Fournissent l’énergie nécessaire au circuit.')">
-      <h3>🔋 Sources d’alimentation</h3>
-      <p>Cliquer pour voir</p>
-    </div>
-
-    <div class="card gray" onclick="openModal('Fils électriques','Relient logiquement les composants.')">
-      <h3>🔌 Fils électriques</h3>
-      <p>Cliquer pour voir</p>
-    </div>
-
-    <div class="card orange" onclick="openModal('Interrupteurs / Capteurs','Permettent la commande et la détection.')">
-      <h3>🔘 Interrupteurs / Capteurs</h3>
-      <p>Cliquer pour voir</p>
-    </div>
-
-    <div class="card violet" onclick="openModal('Préactionneurs / Actionneurs','Transmettent la commande vers les récepteurs.')">
-      <h3>⚙️ Préactionneurs / Actionneurs</h3>
-      <p>Cliquer pour voir</p>
-    </div>
-
-    <div class="card yellow" onclick="openModal('Récepteurs','Produisent un effet visible, sonore ou mécanique.')">
-      <h3>💡 Récepteurs</h3>
-      <p>Cliquer pour voir</p>
-    </div>
-
-    <div class="card red" onclick="openModal('Cartes Panne','Introduisent des dysfonctionnements dans le circuit.')">
-      <h3>⚠️ Cartes Panne</h3>
-      <p>Cliquer pour voir</p>
-    </div>
-
-    <div class="card green" onclick="openModal('Cartes Avantage','Offrent des bonus stratégiques au joueur.')">
-      <h3>🟢 Cartes Avantage</h3>
-      <p>Cliquer pour voir</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="section white reveal">
-  <h2>L’équipe</h2>
-  <p>
-    Projet réalisé par une équipe d’étudiants autour de la pédagogie,
-    du design graphique et de la logique de jeu.
-  </p>
-</section>
-
 <footer>
-  © Circuit Express — Projet pédagogique<br>
-  <a href="https://github.com/printfhamza/CircuitExpress">GitHub</a>
+  © Circuit Express — Projet pédagogique
 </footer>
 
-<!-- MODAL -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">×</span>
-    <h3 id="modal-title"></h3>
-    <p id="modal-text"></p>
-  </div>
-</div>
-
-<script src="main.js"></script>
 </body>
 </html>
