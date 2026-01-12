@@ -2,92 +2,103 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Circuit Express</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Circuit Express — Jeu pédagogique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-<header>
-  <h1>CIRCUIT EXPRESS</h1>
-  <p>Jeu de cartes pédagogique sur l’électricité et l’automatisation</p>
-</header>
+<body class="bg-slate-950 text-slate-100">
 
-<section>
-  <h2>Présentation du projet</h2>
-  <p>
-    Circuit Express est un jeu de cartes éducatif conçu pour apprendre
-    la logique d’un circuit électrique automatisé de manière simple,
-    visuelle et sans calculs.
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <h1 class="text-5xl md:text-6xl font-black tracking-tight">CIRCUIT EXPRESS</h1>
+  <p class="mt-4 text-xl text-slate-300 max-w-2xl">
+    Jeu de cartes pédagogique sur l’électricité et l’automatisation
+  </p>
+  <div class="mt-8 flex gap-4">
+    <a href="#projet" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 font-semibold">
+      Découvrir le jeu
+    </a>
+    <a href="#cartes" class="px-6 py-3 rounded-xl bg-slate-800 border border-slate-700 hover:border-slate-500">
+      Les cartes
+    </a>
+  </div>
+</section>
+
+<!-- PROJET -->
+<section id="projet" class="max-w-5xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold mb-6">Le projet</h2>
+  <p class="text-slate-300 leading-relaxed">
+    Circuit Express est un jeu de cartes éducatif destiné à apprendre
+    la logique d’un circuit électrique automatisé.  
+    Le jeu repose uniquement sur la réflexion logique, sans calculs,
+    et s’adresse à un public à partir de 11 ans.
   </p>
 </section>
 
-<section>
-  <h2>Objectif du jeu</h2>
-  <p>
-    Les joueurs doivent construire un circuit électrique fonctionnel
-    en respectant une logique réelle utilisée en automatisation.
+<!-- LOGIQUE -->
+<section class="bg-slate-900 py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Logique du circuit</h2>
+    <div class="bg-slate-800 p-6 rounded-xl text-center font-mono text-lg">
+      Source → Fil → Interrupteur / Capteur → Préactionneur / Actionneur → Récepteur → Fil → Retour à la source
+    </div>
+
+    <details class="mt-6 bg-slate-800 p-4 rounded-xl">
+      <summary class="cursor-pointer font-semibold">Voir le détail pédagogique</summary>
+      <p class="mt-3 text-slate-300">
+        Cette logique respecte la séparation réelle entre la commande,
+        l’action et l’effet, comme dans les systèmes industriels.
+      </p>
+    </details>
+  </div>
+</section>
+
+<!-- FAMILLES -->
+<section id="cartes" class="max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold mb-10">Familles de cartes</h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="p-6 rounded-xl bg-blue-600/20 border border-blue-600">Sources d’alimentation</div>
+    <div class="p-6 rounded-xl bg-gray-600/20 border border-gray-600">Fils électriques</div>
+    <div class="p-6 rounded-xl bg-orange-600/20 border border-orange-600">Interrupteurs / Capteurs</div>
+    <div class="p-6 rounded-xl bg-purple-600/20 border border-purple-600">Préactionneurs / Actionneurs</div>
+    <div class="p-6 rounded-xl bg-yellow-500/20 border border-yellow-500 text-black">Récepteurs</div>
+    <div class="p-6 rounded-xl bg-red-600/20 border border-red-600">Cartes Panne</div>
+    <div class="p-6 rounded-xl bg-green-600/20 border border-green-600">Cartes Avantage</div>
+  </div>
+</section>
+
+<!-- AVANCEMENT -->
+<section class="bg-slate-900 py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Avancement du projet</h2>
+    <ul class="list-disc list-inside text-slate-300 space-y-2">
+      <li>Familles de cartes définies</li>
+      <li>Règles du jeu validées</li>
+      <li>Design des cartes en cours</li>
+      <li>Site web en développement</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EQUIPE -->
+<section class="max-w-5xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold mb-6">L’équipe</h2>
+  <p class="text-slate-300">
+    Projet réalisé par une équipe d’étudiants autour de la conception
+    pédagogique, du design graphique et de la logique de jeu.
   </p>
-  <p class="logic">
-    Source → Fil → Interrupteur ou Capteur → Préactionneur / Actionneur
-    → Récepteur → Fil → Retour à la source
-  </p>
 </section>
 
-<section>
-  <h2>Principe pédagogique</h2>
-  <ul>
-    <li>Comprendre la logique d’un circuit</li>
-    <li>Distinguer commande, action et effet</li>
-    <li>Apprendre sans calculs électriques</li>
-    <li>Raisonner comme dans un vrai projet</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Familles de cartes</h2>
-  <ul class="families">
-    <li class="blue">Sources d’alimentation</li>
-    <li class="gray">Fils électriques</li>
-    <li class="orange">Interrupteurs / Capteurs</li>
-    <li class="purple">Préactionneurs / Actionneurs</li>
-    <li class="yellow">Récepteurs</li>
-    <li class="red">Cartes Panne</li>
-    <li class="green">Cartes Avantage</li>
-  </ul>
-</section>
-
-<section>
-  <h2>L’équipe</h2>
-  <ul>
-    <li>Conception pédagogique</li>
-    <li>Design graphique</li>
-    <li>Règles du jeu</li>
-    <li>Développement du site web</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Avancement du projet</h2>
-  <ul>
-    <li>Logique du jeu définie</li>
-    <li>Familles de cartes validées</li>
-    <li>Cartes graphiques en cours</li>
-    <li>Site web vitrine fonctionnel</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Liens</h2>
-  <p>
-    Dépôt GitHub du projet :
-    <a href="https://github.com/printfhamza/CircuitExpress" target="_blank">
-      https://github.com/printfhamza/CircuitExpress
+<!-- FOOTER -->
+<footer class="bg-slate-950 border-t border-slate-800 py-8 text-center text-slate-400">
+  <p>© Circuit Express — Projet pédagogique</p>
+  <p class="mt-2">
+    <a href="https://github.com/printfhamza/CircuitExpress" class="underline">
+      Voir le projet sur GitHub
     </a>
   </p>
-</section>
-
-<footer>
-  Circuit Express — Projet pédagogique
 </footer>
 
 </body>
