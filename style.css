@@ -1,1 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 100px 20px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.section-text {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+.logic-box {
+  background: #f8fafc;
+  border: 2px dashed #94a3b8;
+  padding: 20px;
+  border-radius: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.accordion-content {
+  display: none;
+  margin-top: 12px;
+  color: #475569;
+}
+
+.family-blue { border-left: 8px solid #2563eb; }
+.family-gray { border-left: 8px solid #6b7280; }
+.family-orange { border-left: 8px solid #f97316; }
+.family-violet { border-left: 8px solid #a855f7; }
+.family-yellow { border-left: 8px solid #eab308; }
+.family-red { border-left: 8px solid #dc2626; }
+.family-green { border-left: 8px solid #16a34a; }
 
