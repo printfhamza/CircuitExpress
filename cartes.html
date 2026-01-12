@@ -7,52 +7,53 @@
 </head>
 <body>
 
-<nav>
-  <a href="index.html">← Accueil</a>
+<nav class="navbar">
+  <a href="index.html" class="logo">← Accueil</a>
 </nav>
 
-<main class="page">
+<main class="page fade-in">
   <h1>Familles de cartes</h1>
 
-  <div class="grid">
+  <div class="accordion">
 
-    <a class="card blue" href="#">
-      <h3>Sources d’alimentation</h3>
-      <p>Fournissent l’énergie</p>
-    </a>
+    <button class="accordion-btn blue">Sources d’alimentation</button>
+    <div class="accordion-content">
+      <p>Fournissent l’énergie nécessaire au circuit.</p>
+    </div>
 
-    <a class="card gray" href="#">
-      <h3>Fils électriques</h3>
-      <p>Liaison logique</p>
-    </a>
+    <button class="accordion-btn gray">Fils électriques</button>
+    <div class="accordion-content">
+      <p>Assurent la liaison logique entre les composants.</p>
+    </div>
 
-    <a class="card orange" href="#">
-      <h3>Interrupteurs / Capteurs</h3>
-      <p>Commande et détection</p>
-    </a>
+    <button class="accordion-btn orange">Interrupteurs / Capteurs</button>
+    <div class="accordion-content">
+      <p>Permettent la commande et la détection.</p>
+    </div>
 
-    <a class="card violet" href="#">
-      <h3>Préactionneurs</h3>
-      <p>Transmission de commande</p>
-    </a>
+    <button class="accordion-btn violet">Préactionneurs / Actionneurs</button>
+    <div class="accordion-content">
+      <p>Transmettent la commande vers les récepteurs.</p>
+    </div>
 
-    <a class="card yellow" href="#">
-      <h3>Récepteurs</h3>
-      <p>Effet visible ou mécanique</p>
-    </a>
+    <button class="accordion-btn yellow">Récepteurs</button>
+    <div class="accordion-content">
+      <p>Produisent un effet visible, sonore ou mécanique.</p>
+    </div>
 
-    <a class="card red" href="#">
-      <h3>Cartes Panne</h3>
-      <p>Dysfonctionnements</p>
-    </a>
+    <button class="accordion-btn red">Cartes Panne</button>
+    <div class="accordion-content">
+      <p>Introduisent des dysfonctionnements dans le circuit.</p>
+    </div>
 
-    <a class="card green" href="#">
-      <h3>Cartes Avantage</h3>
-      <p>Bonus stratégiques</p>
-    </a>
+    <button class="accordion-btn green">Cartes Avantage</button>
+    <div class="accordion-content">
+      <p>Offrent des bonus stratégiques au joueur.</p>
+    </div>
 
   </div>
 </main>
 
+<script src="main.js"></script>
 </body>
 </html>
