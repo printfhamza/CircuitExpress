@@ -4,131 +4,93 @@
   <meta charset="UTF-8">
   <title>Circuit Express — Jeu pédagogique</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-slate-50 text-slate-800">
+<body>
 
-<!-- HERO -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-white">
-  <h1 class="text-5xl md:text-6xl font-black tracking-tight text-slate-900">
-    CIRCUIT EXPRESS
-  </h1>
-  <p class="mt-4 text-xl text-slate-600 max-w-2xl">
-    Jeu de cartes pédagogique sur l’électricité et l’automatisation
+<header class="hero">
+  <h1>CIRCUIT EXPRESS</h1>
+  <p>Jeu de cartes pédagogique sur l’électricité et l’automatisation</p>
+  <div class="hero-buttons">
+    <a href="#projet">Découvrir le projet</a>
+    <a href="#familles">Voir les cartes</a>
+  </div>
+</header>
+
+<section id="projet" class="section light">
+  <h2>Le projet</h2>
+  <p>
+    Circuit Express est un jeu de cartes éducatif conçu pour apprendre la logique
+    d’un circuit électrique automatisé sans calculs, uniquement par la réflexion
+    et la manipulation de cartes.
   </p>
-  <div class="mt-8 flex gap-4">
-    <a href="#projet" class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-500">
-      Découvrir le jeu
-    </a>
-    <a href="#familles" class="px-6 py-3 rounded-xl bg-slate-200 hover:bg-slate-300 font-semibold">
-      Les cartes
-    </a>
+</section>
+
+<section class="section white">
+  <h2>Logique du circuit</h2>
+  <div class="logic">
+    Source → Fil → Interrupteur ou Capteur → Préactionneur / Actionneur →
+    Récepteur → Fil → Retour à la source
   </div>
 </section>
 
-<!-- PROJET -->
-<section id="projet" class="section bg-slate-100">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="section-title">Le projet</h2>
-    <p class="section-text">
-      Circuit Express est un jeu de cartes éducatif conçu pour apprendre
-      la logique d’un circuit électrique automatisé sans calculs,
-      uniquement par la réflexion et la manipulation de cartes.
-    </p>
-  </div>
-</section>
+<section id="familles" class="section light">
+  <h2>Familles de cartes</h2>
 
-<!-- LOGIQUE -->
-<section class="section bg-white">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="section-title">Logique du circuit</h2>
-    <div class="logic-box">
-      Source → Fil → Interrupteur ou Capteur → Préactionneur / Actionneur → Récepteur → Fil → Retour à la source
+  <div class="grid">
+
+    <div class="card blue">
+      <h3>Sources d’alimentation</h3>
+      <p>Fournissent l’énergie nécessaire au circuit.</p>
     </div>
-  </div>
-</section>
 
-<!-- FAMILLES -->
-<section id="familles" class="section bg-slate-100">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="section-title">Familles de cartes</h2>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <div class="card family-blue">
-        <h3>Sources d’alimentation</h3>
-        <div class="accordion-content">
-          Fournissent l’énergie nécessaire au circuit.
-        </div>
-      </div>
-
-      <div class="card family-gray">
-        <h3>Fils électriques</h3>
-        <div class="accordion-content">
-          Assurent la liaison logique entre les composants.
-        </div>
-      </div>
-
-      <div class="card family-orange">
-        <h3>Interrupteurs / Capteurs</h3>
-        <div class="accordion-content">
-          Permettent la commande et la détection.
-        </div>
-      </div>
-
-      <div class="card family-violet">
-        <h3>Préactionneurs / Actionneurs</h3>
-        <div class="accordion-content">
-          Transmettent la commande vers les récepteurs.
-        </div>
-      </div>
-
-      <div class="card family-yellow">
-        <h3>Récepteurs</h3>
-        <div class="accordion-content">
-          Produisent un effet visible, sonore ou mécanique.
-        </div>
-      </div>
-
-      <div class="card family-red">
-        <h3>Cartes Panne</h3>
-        <div class="accordion-content">
-          Introduisent des dysfonctionnements dans le circuit.
-        </div>
-      </div>
-
-      <div class="card family-green">
-        <h3>Cartes Avantage</h3>
-        <div class="accordion-content">
-          Offrent des bonus et des aides stratégiques.
-        </div>
-      </div>
-
+    <div class="card gray">
+      <h3>Fils électriques</h3>
+      <p>Assurent la liaison logique entre les composants.</p>
     </div>
+
+    <div class="card orange">
+      <h3>Interrupteurs / Capteurs</h3>
+      <p>Permettent la commande et la détection.</p>
+    </div>
+
+    <div class="card violet">
+      <h3>Préactionneurs / Actionneurs</h3>
+      <p>Transmettent la commande vers les récepteurs.</p>
+    </div>
+
+    <div class="card yellow">
+      <h3>Récepteurs</h3>
+      <p>Produisent un effet visible, sonore ou mécanique.</p>
+    </div>
+
+    <div class="card red">
+      <h3>Cartes Panne</h3>
+      <p>Introduisent des dysfonctionnements dans le circuit.</p>
+    </div>
+
+    <div class="card green">
+      <h3>Cartes Avantage</h3>
+      <p>Offrent des bonus et des aides stratégiques.</p>
+    </div>
+
   </div>
 </section>
 
-<!-- EQUIPE -->
-<section class="section bg-white">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="section-title">L’équipe</h2>
-    <p class="section-text">
-      Projet réalisé par une équipe d’étudiants autour de la conception pédagogique,
-      du design graphique et de la logique de jeu.
-    </p>
-  </div>
+<section class="section white">
+  <h2>L’équipe</h2>
+  <p>
+    Projet réalisé par une équipe d’étudiants autour de la conception pédagogique,
+    du design graphique et de la logique de jeu.
+  </p>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-slate-200 text-center py-6 text-slate-600">
-  <p>© Circuit Express — Projet pédagogique</p>
-  <a href="https://github.com/printfhamza/CircuitExpress" class="underline">
-    Voir le projet sur GitHub
-  </a>
+<footer>
+  © Circuit Express — Projet pédagogique  
+  <br>
+  <a href="https://github.com/printfhamza/CircuitExpress">Voir le projet sur GitHub</a>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
